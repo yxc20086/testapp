@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>战友铁军春砂仁茶防伪查询系统</title>
+    <style>
+        html , body{
+            margin: 0;
+            padding: 0;
+        }
+        banner img{
+            width: 100%;
+        }
+        .menu{
+            display: flex;
+            padding-left: 0;
+            justify-content:space-around;
+        }
+        .menu-item{
+            text-align: center;
+            flex: 1;
+        }
+        .active{
+            color: #21763a;
+        }
+		.black{
+			color:#000000
+		}
+        .about{
+            padding: 4px 14px;
+        }
+        .about img{
+            width: 100%;
+        }
+        .indent{
+            text-indent: 2rem;
+        }
+        footer{
+            text-align: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <banner>
+        <img src="images/csrc/banner.png" alt="">
+    </banner>
+    <menu class="menu">
+        <div class="menu-item index"><a href="#"><img style="width: 50%;" src="images/csrc/btn1.png" alt=""></a><p>防伪查询</p></div>
+        <div class="menu-item"><a href="track.html"><img style="width: 50%;" src="images/csrc/btn2.png" alt=""></a><p>产品介绍</p></div>
+        <div class="menu-item"><a href="instruction.html"><img style="width: 50%;" src="images/csrc/btn3.png" alt=""></a><p>检测报告</p></div>
+        <div class="menu-item active"><a href="#"><img style="width: 50%;" src="images/csrc/btn4_active.png" alt=""></a><p>关于我们</p></div>
+    </menu>
+    <div class="about">
+        <p class="indent">
+            湖北战友企业管理集团有限公司是一个由44个子公司组成的知名企业。原名为湖北战友投资发展集团有限公司，2017年7月正式更名为湖北战友企业管理集团有限公司。
+        </p>
+        <p class="indent">
+            公司从武汉市二七路一个蔬菜配送店起步，后经逐步拓展、产业转型和提档升级，现已是一个拥有地产开发板块、装备汽车后市场板块、大健康板块、教育文化板块、军民融合板块、绿色供应链板块等六大类的大型集团。
+        </p>
+        <img src="images/csrc/图层2 (2).png" alt="" srcset="">
+        <p class="indent">
+            战友大健康是根据时代发展、社会需求与疾病谱的改变，提出的一种全局的理念。随着“健康中国战略”被写入十九大报告，国家卫计委改为“国家卫生健康委员会”，健康产业将成为国民经济的战略性支柱产业和引领未来发展的新引擎。战友集团从阳光、空气、水、饮食、住宅等，影响人的健康的因素出发，布局大健康产业。
+        </p>
+        <p><b>联系电话：027-83868181   027-83867171 </b></p>
+        <p><b>公司地址：武汉市江汉区淮海路泛海国际SOHO城4栋11楼</b></p>
+    </div>
+    <footer>
+        技术支持：武汉正熙网络科技有限公司
+    </footer>
+	<script>
+	var index = document.getElementsByClassName("index")[0];
+	var RawCode = localStorage.RawCode;
+	index.addEventListener('click',function(e){
+		window.location.href = "/Z/" + RawCode + "?TStamp=1";
+	});
+	</script>
+</body>
+</html>
